@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --simana:2px solid #228B22;
+            --bala-color:cadetblue;
+            --baje-color:crimson;
+            --lekha:white;
+        }
+        .box{
+            height: 200px;
+            width:200px;
+            color:var(--lekha);
+            border: var(--simana);
+            margin-top: 2px;
+        }
+        #box-1{
+            background-color: var(--baje-color);
+            
+        }
+        #box-2{
+            background-color: var(--bala-color);
+            visibility: hidden;
+            visibility: visible;
+
+        }
+        #box-3{
+            background-color:var(--baje-color);
+           display:block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">w</div>
+    <div class="box" id="box-2">w</div>
+    <div class="box" id="box-3">w</div>
+</body>
+</html>

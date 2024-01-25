@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: limegreen;
+                left:0px;
+                top: 0px;
+            }
+            50%{
+                background-color: white;
+                left:0250px;
+                top: 300px;
+            }
+
+            100%{
+                background-color: maroon;
+                left: 300px;
+                top: 0px;
+            }
+        }
+        .stage{
+            width: 500px;
+            height: 300px;
+            background-color: lightskyblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            border-radius: 50%;
+            position: relative;
+            animation: sliding 1s ease-in-out .5s infinite alternate ;
+            animation-play-state: running;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>lets explore animation</h1>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

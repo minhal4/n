@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid crimson;
+            background-color: cadetblue;
+            transition: width 10s linear ;
+        }
+        .box:hover{
+            width: 400px;
+        }
+        img{
+            width: 20px;
+            border: 2px solid crimson;
+            margin-top: 30px;
+            transition: width 5s ease,transform 10s;
+            display: block;
+        }
+        img:hover{
+            width: 300px;
+            transform: rotate(30deg);
+        }
+        iframe{
+            margin-top: 20px;
+            width: 30px;
+            transition: width 5s linear 5s,height 2s ease 2s;
+        }
+        iframe:hover{
+            width: 560px;
+            height: 400px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>transition</h3>
+
+    </div>
+    <img src="images.jpeg" alt="">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/25553QB8uxU?si=-Vp-8qBKOjZGlzBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

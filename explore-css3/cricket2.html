@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: 2px solid ;
+        }
+        .field:hover .bat{
+            transform: rotate(-80deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 2s ease;
+        }
+        .ball{
+            width: 50px;
+            height:50px ;
+            border-radius: 50%;
+            background-color: RED;
+            position: relative;
+            left: 620px;
+            transition:transform 2s ease .9s;
+        }
+        .field:hover .ball{
+            transform: translate(5000px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="bdm-dyna-drive-cricket-bat-500x500.png" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+    
+</body>
+</html>
